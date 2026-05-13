@@ -10,24 +10,19 @@ int main(){
     cin >> str  ;
     int i=0;
     bool res=false;
-    while(i<str.length()){
-        if(str[i]=='T'){
-            int j=i;
-            while(j<str.length()){
-                if(str[j]=='A'){
-                    int k=j;
-                    while(k<str.length()){
-                        if(str[k]=='P'){
-                            res=true;
-                        }
-                        k++;
-                    }
-                }
-                j++;
-            }
-            
+    bool cd1 = false;
+    bool cd2 = false;
+    bool cd3 = false;
+    for(int i=0; i<str.size() && !res; i++){
+        if(!cd1 && str[i]=='T'){
+            cd1=true;
         }
-        i++;
+        if(cd1 && !cd2 && str[i]=='A'){
+            cd2=true;
+        }
+        if(cd2 && str[i]=='P'){
+            res=true;
+        }
     } 
     if(res){
         cout << "S" << endl;
