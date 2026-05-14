@@ -1,14 +1,12 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
+#include<bits/stdc++.h>
 
 using namespace std; 
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int N, res;
+    int N;
+    long long res;
     cin >> N;
     vector<vector<int>> arboles;
     for(int i=0; i<N; i++){

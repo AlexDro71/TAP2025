@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
+#include<bits/stdc++.h>
 
 using namespace std; 
 
@@ -16,7 +13,7 @@ int main(){
         cin >> valor;
         B.push_back(valor);
     }
-    
+
 
     return 0;
 }
